@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Header" id="U6b-Vx-4bR" customClass="HeaderView" customModule="Header" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="458" height="263"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="vBo-mK-Jrs">
+                    <rect key="frame" x="0.0" y="0.0" width="458" height="263"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vBo-mK-Jrs" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="7oA-M8-57E"/>
+                <constraint firstItem="vBo-mK-Jrs" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="AWN-ry-JKq"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="vBo-mK-Jrs" secondAttribute="trailing" id="NeB-4h-5jS"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="vBo-mK-Jrs" secondAttribute="bottom" id="tdc-UB-sKL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="headerImageView" destination="vBo-mK-Jrs" id="8pM-Kz-Zlu"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="31"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="header" width="621" height="412"/>
+    </resources>
+</document>
